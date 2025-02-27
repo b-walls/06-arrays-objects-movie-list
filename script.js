@@ -1,5 +1,5 @@
 // Arrays holding movie titles for each genre
-const comedyMovies = ["Superbad", "Step Brothers", "Anchorman", "The Hangover"];
+const comedyMovies = ["Deadpool", "Step Brothers", "Anchorman", "The Hangover"];
 const actionMovies = ["Mad Max: Fury Road", "John Wick", "Die Hard", "The Dark Knight"];
 const dramaMovies = ["The Shawshank Redemption", "Forrest Gump", "Fight Club", "The Godfather"];
 const sciFiMovies = ["Inception", "The Matrix", "Interstellar", "Blade Runner 2049"];
