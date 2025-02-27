@@ -1,19 +1,32 @@
-// Set up event listener for when the user selects a genre
-document.getElementById("genre").addEventListener("change", function() {
-  // Get the selected genre
-  const selectedGenre = document.getElementById("genre").value;
+// Arrays holding movie titles for each genre
+const comedyMovies = ["Superbad", "Step Brothers", "Anchorman", "The Hangover"];
+const actionMovies = ["Mad Max: Fury Road", "John Wick", "Die Hard", "The Dark Knight"];
+const dramaMovies = ["The Shawshank Redemption", "Forrest Gump", "Fight Club", "The Godfather"];
+const sciFiMovies = ["Inception", "The Matrix", "Interstellar", "Blade Runner 2049"];
 
-  // Add movies to the movieList based on the selected genre
+// Get the genre dropdown and movie recommendations elements
+const genreDropdown = document.getElementById("genre");
+const movieRecommendations = document.getElementById("movieRecommendations");
+
+// Set up event listener for when the user selects a genre
+genreDropdown.addEventListener("change", function() {
+  // Get the selected genre
+  const selectedGenre = genreDropdown.value;
+
+  // Variable to hold the list of movies
+  let movieList = [];
+
+  // Assign movies to the movieList based on the selected genre
   if (selectedGenre === "Comedy") {
-    console.log("You selected 'Comedy'");
+    movieList = comedyMovies;
   } else if (selectedGenre === "Action") {
-    console.log("You selected 'Action'");
+    movieList = actionMovies;
   } else if (selectedGenre === "Drama") {
-    console.log("You selected 'Drama'");
+    movieList = dramaMovies;
   } else if (selectedGenre === "Sci-Fi") {
-    console.log("You selected 'Sci-Fi'");
+    movieList = sciFiMovies;
   }
 
   // Display the list of movies on the page
-  document.getElementById("movieRecommendations").innerText = `Enjoy: !`;
+  movieRecommendations.innerText = `Enjoy: ${movieList.join(", ")}!`;
 });
