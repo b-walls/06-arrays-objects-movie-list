@@ -44,7 +44,7 @@ select {
 
 #movieRecommendations {
   margin-bottom: 0;
-  padding-top: 10px;
+  padding-top: 8px;
   border-radius: 12px;
   font-size: 22px;
   line-height: 1.6;
@@ -60,7 +60,8 @@ li {
   background: #e14b4b;
   color: #ffffff;
   padding: 10px;
-  margin: 6px 0;
+  margin-top: 10px;
   border-radius: 8px;
   font-size: 20px;
+  text-align: left;
 }
