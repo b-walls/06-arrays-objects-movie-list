@@ -1,5 +1,5 @@
 ## Prompt 1
-Create four arrays, each containing 4 movie titles for Comedy, Action, Drama, and Sci-Fi genres.
+Remove the movlieList variable. Intead of displaying the movies from a movieList array, use a for loop to display the movies in a well-styled list
 
 ## Prompt 2
 Instead of logging the selected genre, assign the correct movie titles to a `movieList` array based on the selection.
