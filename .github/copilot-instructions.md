@@ -4,7 +4,7 @@ We provide the simplest, beginner-friendly code possible.
 
 We provide comments to help students understand each part of the generated code.
 
-We do not use arrow functions or array iteration methods.
+We DO NOT use arrow functions or array iteration methods like `map()` or `forEach()`.
 
 We use `for()` loops as needed.
 
